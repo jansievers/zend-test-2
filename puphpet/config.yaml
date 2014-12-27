@@ -10,7 +10,7 @@ vagrantfile-local:
         network:
             private_network: 192.168.56.102
             forwarded_port:
-                eHqrQow0gjKs:
+                CUYvXW02x8Lz:
                     host: '8080'
                     guest: '80'
         post_up_message: ''
@@ -32,7 +32,7 @@ vagrantfile-local:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
-            FiNlbZ9GANWd:
+            N0rkeQqFJxXK:
                 owner: www-data
                 group: www-data
                 source: ./
@@ -86,16 +86,16 @@ apache:
     modules:
         - rewrite
     vhosts:
-        0co3zl46acbz:
-            servername: jcs.dev
+        aba626zpx21i:
+            servername: zf2.dev
             serveraliases:
-                - www.jcs.dev
+                - www.zf2.dev
             docroot: /var/www/public
             port: '80'
             setenv:
                 - 'APP_ENV dev'
             directories:
-                sfvktwaxeugn:
+                gbltwrgllwo2:
                     provider: directory
                     path: /var/www/public
                     options:
@@ -123,7 +123,7 @@ nginx:
         proxy_buffers: '4 256k'
     upstreams: {  }
     vhosts:
-        tg3a5xg71rlf:
+        h4jai3s14dox:
             proxy: ''
             server_name: awesome.dev
             server_aliases:
@@ -192,7 +192,7 @@ drush:
 ruby:
     install: '1'
     versions:
-        rF8avH2yRQyU:
+        HL0Innc1UzKp:
             version: ''
 nodejs:
     install: '0'
@@ -201,7 +201,7 @@ python:
     install: '1'
     packages: {  }
     versions:
-        Wni6EtzWfukr:
+        hYI8OZrYLKcG:
             version: ''
 mysql:
     install: '1'
@@ -209,7 +209,7 @@ mysql:
     root_password: '123'
     adminer: '1'
     databases:
-        2SBjXKj3D242:
+        BgAjJb7w1jDd:
             grant:
                 - ALL
             name: jcs
